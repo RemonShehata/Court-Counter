@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+//TODO: ask for team names before the game starts
+
 public class MainActivity extends AppCompatActivity {
 
     // keep track score for team A
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * reset the score for both team A and team B
      */
-    public void reset(View view) {
+    public void reset(View view) { //TODO: refactor to resetScore
         scoreTeamA = 0;
         displayForTeamA(scoreTeamA);
         scoreTeamB = 0;
